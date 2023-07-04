@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5 приклад</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML5 приклад</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#section1">Розділ 1</a></li>
+        <li><a href="#section2">Розділ 2</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="section1">
+        <h2>Розділ 1</h2>
+        <p>Тут є текст для першого розділу.</p>
+        <figure>
+          <img src="example_image.jpg" alt="Приклад зображення" />
+          <figcaption>Підпис до зображення</figcaption>
+        </figure>
+      </section>
+      <section id="section2">
+        <h2>Розділ 2</h2>
+        <p>Тут є текст для другого розділу.</p>
+        <video controls>
+          <source src="example_video.mp4" type="video/mp4" />
+          Ваш браузер не підтримує відео.
+        </video>
+      </section>
+      <section id="contact">
+        <h2>Форма контакту</h2>
+        <form>
+          <label for="name">Ім'я:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="birthdate">Дата народження:</label>
+          <input type="date" id="birthdate" name="birthdate">
+
+          <label for="message">Повідомлення:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Надіслати</button>
+        </form>
+      </section>
+      <section id="multimedia">
+        <h2>Мультимедіа</h2>
+
+        <h3>Аудіо</h3>
+        <audio controls>
+          <source src="example_audio.mp3" type="audio/mpeg">
+          Ваш браузер не підтримує аудіо.
+        </audio>
+
+        <h3>Канвас</h3>
+        <canvas id="exampleCanvas" width="300" height="200">
+          Ваш браузер не підтримує канвас. Оновіть браузер або скористайтеся іншим.
+        </canvas>
+      </section>
+    </main>
+    <footer>
+      <p>Права захищено &copy; 2023</p>
+    </footer>
+  </body>
+</html>
