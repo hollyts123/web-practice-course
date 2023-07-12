@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Селектори та специфічність CSS</title>
+    <style>
+      /* Стилізація по типу елемента */
+p {
+    font-family: Arial, sans-serif;
+    color: brown;
+}
+
+/* Стилізація по класу */
+.main-heading {
+    font-size: 2rem;
+}
+
+.odd {
+    color: aqua;
+    text-transform: uppercase;
+}
+
+/* Стилізація по ID */
+#example {
+    text-decoration: underline;
+}
+
+/* Стилізація по атрибуту */
+.highlight {
+    background-color: yellow;
+}
+
+/* Стилізація за допомогою дочірнього селектора */
+section > h2 {
+    color: blue;
+}
+
+main section :nth-child(4) {
+    background-color: rgb(72, 179, 27);
+}
+
+#last-p {
+    text-decoration: underline;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="main-heading">Селектори та специфічність CSS</h1>
+    </header>
+    <main>
+      <section>
+        <h2 id="example">Приклади</h2>
+        <p>
+          Це приклад тексту, <span class="highlight">виділеного</span> за
+          допомогою CSS.
+        </p>
+        <p class="odd">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit aliquam, ullam neque porro unde laborum perferendis itaque inventore omnis consectetur tenetur velit aperiam vitae odio fuga eum nobis! Quidem, earum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis asperiores quia dolor cumque optio magnam est id voluptatum tempora animi! Odio, iusto corporis! Aperiam excepturi aliquid dolorum quibusdam, labore neque.</p>
+        <p class="odd">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit repellat ut voluptatem tempora vitae, ducimus facilis id explicabo eius quaerat earum! Repellendus sunt modi nostrum nihil voluptates obcaecati reiciendis expedita?</p>
+        <p id="last-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facere reprehenderit ipsum nihil. Qui dolore tempore possimus debitis vero provident ab asperiores minus ratione, quibusdam enim consequuntur nam culpa perspiciatis.</p>
+      </section>
+    </main>
+  </body>
+</html>
