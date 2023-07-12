@@ -1,0 +1,50 @@
+/* Стилі за замовчуванням */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 1rem;
+}
+
+footer {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+/* Стилі для екранів менше 600 пікселів */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Стилі для екранів більше 600 пікселів */
+@media (min-width: 601px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+}
