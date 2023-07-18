@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #16324F;
     padding: 1rem;
 }
 
@@ -14,14 +14,26 @@ header h1 {
     color: #fff;
     margin: 0;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 section {
     padding: 1rem;
+    margin: 0 30px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-img {
+    width: 30%;
+    margin: 20px 0;
 }
 
 footer {
-    background-color: #333;
+    background-color: #13293D;
     padding: 1rem;
     text-align: center;
     color: #fff;
@@ -35,6 +47,18 @@ footer {
 
     section h2 {
         font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .img-container {
+        display: block;
+    }
+
+    .my-img {
+        display: block;
+        width: 80%;
+        margin: 20px auto;
     }
 }
 
