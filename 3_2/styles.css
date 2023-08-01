@@ -1,0 +1,28 @@
+h1 {
+  color: #711f56;
+}
+
+p {
+  color: #a7859c;
+}
+
+.tertiary {
+  background-color: #a7859c;
+  color: #d1cdd0;
+}
+
+ul {
+  color: #64d3ae;
+  font-family: monospace;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 2rem;
+  list-style-type: square;
+}
+
+.box {
+  border: 3px inset #ff8400;
+  width: 450px;
+  height: 300px;
+  background-color: #00ff00;
+}

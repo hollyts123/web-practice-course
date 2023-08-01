@@ -1,0 +1,47 @@
+$primary-color: #711f56;
+$secondary-color: #a7859c;
+$tertiary-color: #d1cdd0;
+$box-color: #ff8400;
+$fill-box-color: #00ff00;
+$box-width: 450px;
+$box-height: 300px;
+
+
+@mixin list-style {
+    color: #64d3ae;
+    font-family: monospace;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 2rem;
+    list-style-type: square;
+}
+
+@mixin box-style($color, $width, $height) {
+    border: 3px inset $color;
+    width: $width;
+    height: $height;
+    background-color: $fill-box-color;
+}
+
+
+
+h1 {
+    color: $primary-color;
+}
+
+p {
+    color: $secondary-color;
+}
+
+.tertiary {
+    background-color: $secondary-color;
+    color: $tertiary-color;
+}
+
+ul {
+    @include list-style;
+}
+
+.box {
+    @include box-style($box-color, $box-width, $box-height);
+}
