@@ -1,0 +1,36 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header" "nav main" "footer aside";
+  grid-gap: 20px;
+  text-align: center;
+}
+header {
+  grid-area: header;
+  background-color: #dfc6cb;
+  padding: 20px;
+}
+nav {
+  grid-area: nav;
+  background-color: #eceeb5;
+  padding: 20px;
+}
+main {
+  grid-area: main;
+  background-color: #c9dee1;
+  padding: 20px;
+  grid-row: 2 / 4;
+}
+aside {
+  grid-area: aside;
+  background-color: #f4a9a9;
+  padding: 20px;
+  grid-column: 2 / 4;
+}
+footer {
+  grid-area: footer;
+  background-color: #c6e1b0;
+  padding: 20px;
+  grid-column: 1 / 3;
+}
